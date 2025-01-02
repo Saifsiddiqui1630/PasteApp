@@ -90,11 +90,11 @@ const handleShare = (id) => {
       <div className="flex flex-col gap-4 mt-7">
         {filteredData.length > 0 ? (
   filteredData.map((paste) => (
-    <div
+              <div
                 className="border rounded  flex flex-col   justify-between bg-white"
                 key={paste?._id}
               >
-                <div className="flex bg-gray-100 justify-between w-full text-shadow-lg font-semibold h-[50px] items-center px-3">
+                <div className="flex flex-col-reverse md:flex-row py-3 gap-2 bg-gray-100 justify-between w-full text-shadow-lg font-semibold  items-center px-3">
                   <div className="">{paste.title}</div>
                   <div className="flex gap-2">
                     <button className="border p-1 hover:bg-gray-200" title="Edit">
@@ -156,9 +156,9 @@ const handleShare = (id) => {
                     </button>
                   </div>
                 </div>
-                <div className="flex justify-between px-3 min-h-[100px]">
+                <div className="flex flex-col md:flex-row justify-between px-3 min-h-[100px]">
                   <div className="truncate max-w-[450px] pt-3">{paste.content}</div>
-                  <div className="flex gap-2 items-end ">
+                  <div className="flex gap-2 items-center justify-center md:items-end  text-gray-400 ">
                    
 
                     {paste.createdAt}
