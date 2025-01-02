@@ -33,21 +33,20 @@ const router = createBrowserRouter(
         <ViewPaste/>
       </div>
     },
-  ]
-)
+  ],
+  { basename: "/PasteApp" }  // Add this line for subdirectory base
+);
+
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-   
-     <div className='flex justify-center px-4 '>
-        <div className='border-2 shadow-md rounded-md'>
-          <RouterProvider router={router}/>
-          <Toaster/>
-        </div>
-     </div>
-        
-    
+    <div className='flex justify-center px-4 '>
+      <div className='border-2 shadow-md rounded-md'>
+        <RouterProvider router={router}/>
+        <Toaster/>
+      </div>
+    </div>
   )
 }
 
