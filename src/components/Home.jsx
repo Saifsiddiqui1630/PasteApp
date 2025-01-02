@@ -49,9 +49,9 @@ const Home = () => {
         setPearchParams({});
     }
   return (
-    <div className=' '>
+    <div className=''>
       
-      <div className='p-6 bg-gray-100 shadow-lg rounded-lg w-full mx-auto flex '>
+      <div className='p-6 bg-gray-100 shadow-lg rounded-lg w-full mx-auto flex flex-col gap-3 items-center md:flex-row'>
         <input className='w-full p-3  border rounded-md focus:outline-none focus:ring-2 focus:ring-green-400' 
             type="text"
         placeholder='Enter Your Title'
@@ -68,9 +68,9 @@ const Home = () => {
       </div>
         <div className='place-content-center bg-gray-100 pb-8'>
             <textarea
-                className='border w-[93%] focus:outline-none focus:ring-2 focus:ring-green-400 rounded p-3 min-h-[400px]'
+                className='border w-[93%] focus:outline-none focus:ring-2 focus:ring-green-400 rounded p-3 md:min-h-[400px] h-[300px]'
                 value={value}
-                placeholder='Enter Content'
+                placeholder='Enter Content....'
                 onChange={(e)=>{setValue(e.target.value)}}
             />
         </div>
