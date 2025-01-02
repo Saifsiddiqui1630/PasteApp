@@ -41,8 +41,8 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className='flex justify-center px-4 '>
-      <div className='border-2 shadow-md rounded-md'>
+    <div className='flex justify-center px-2  '>
+      <div className='border-2 shadow-md rounded-md w-[90%] md:w-[70%] lg:w-[70%]'>
         <RouterProvider router={router}/>
         <Toaster/>
       </div>
